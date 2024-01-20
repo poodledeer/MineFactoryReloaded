@@ -17,6 +17,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import powercrystals.minefactoryreloaded.gui.MFRCreativeTab;
+import powercrystals.minefactoryreloaded.mixin.accessor.EntityAccessor;
 
 public class BlockFactoryRoad extends Block {
 
@@ -44,7 +45,7 @@ public class BlockFactoryRoad extends Block {
 	@Override
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity e) {
 
-		if (!e.canTriggerWalking())
+		if (!((EntityAccessor) e).callCanTriggerWalking())
 			return;
 		if (e.getEntityData().getInteger("mfr:r") == e.ticksExisted)
 			return;

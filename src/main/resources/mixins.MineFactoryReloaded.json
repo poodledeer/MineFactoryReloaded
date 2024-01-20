@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5-GTNH",
+  "package": "powercrystals.minefactoryreloaded.mixin",
+  "refmap": "mixins.MineFactoryReloaded.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "accessor.EntityAccessor"
+  ],
+  "client": [],
+  "server": []
+}
