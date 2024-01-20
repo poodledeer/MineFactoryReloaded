@@ -12,6 +12,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ICrafting;
 import net.minecraft.item.ItemStack;
 
+import powercrystals.minefactoryreloaded.MineFactoryReloadedCore;
 import powercrystals.minefactoryreloaded.tile.machine.TileEntityDeepStorageUnit;
 
 public class ContainerDeepStorageUnit extends ContainerFactoryInventory {
@@ -22,6 +23,8 @@ public class ContainerDeepStorageUnit extends ContainerFactoryInventory {
 	public ContainerDeepStorageUnit(TileEntityDeepStorageUnit dsu, InventoryPlayer inventoryPlayer) {
 
 		super(dsu, inventoryPlayer);
+
+    //    MineFactoryReloadedCore.log().info("DSU init");
 		_dsu = dsu;
 	}
 
@@ -50,6 +53,7 @@ public class ContainerDeepStorageUnit extends ContainerFactoryInventory {
 		} else {
 			super.putStackInSlot(slot, stack);
 		}
+
 	}
 
 	@Override
@@ -58,10 +62,12 @@ public class ContainerDeepStorageUnit extends ContainerFactoryInventory {
 		if (slot < 38) {
 			if (mergeItemStack(stackInSlot, 38, inventorySlots.size(), true)) {
 				sendSlots(0, 4);
+
 				return true;
 			}
 		} else if (_dsu.isItemValidForSlot(0, stackInSlot) && mergeItemStack(stackInSlot, 0, 36, false)) {
 			sendSlots(0, 4);
+
 			return true;
 		}
 		return false;
@@ -86,13 +92,23 @@ public class ContainerDeepStorageUnit extends ContainerFactoryInventory {
 	@Override
 	public void detectAndSendChanges() {
 
+       // MineFactoryReloadedCore.log().info("started detectandsendchangessuper");
 		super.detectAndSendChanges();
 
+        //MineFactoryReloadedCore.log().info("started detectandsendchanges main");
 		int v = _dsu.getQuantity();
-		for (int i = 0; i < crafters.size(); i++) {
+        //always at zero quantity
+
+        //MineFactoryReloadedCore.log().info("" + _dsu.getQuantity());
+        //MineFactoryReloadedCore.log().info("and there are " + crafters.size() + " crafters");
+        //this iterates ONCE?
+        for (int i = 0; i < crafters.size(); i++) {
 			((ICrafting) crafters.get(i)).sendProgressBarUpdate(this, 200, v);
+
 			((ICrafting) crafters.get(i)).sendProgressBarUpdate(this, 201, v >> 16);
-		}
+            }
+        //_dsu.markDirty();
+        //MineFactoryReloadedCore.log().info("completed detectandsendchanges");
 	}
 
 	@Override

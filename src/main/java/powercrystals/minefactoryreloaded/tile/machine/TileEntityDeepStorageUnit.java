@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import powercrystals.minefactoryreloaded.MineFactoryReloadedCore;
 import powercrystals.minefactoryreloaded.api.IDeepStorageUnit;
 import powercrystals.minefactoryreloaded.core.UtilInventory;
 import powercrystals.minefactoryreloaded.gui.client.GuiDeepStorageUnit;
@@ -28,17 +29,24 @@ public class TileEntityDeepStorageUnit extends TileEntityFactoryInventory implem
 	public TileEntityDeepStorageUnit() {
 
 		super(Machine.DeepStorageUnit);
+
 		setManageSolids(true);
 	}
 
 	@Override
 	public void cofh_validate() {
 
-		super.cofh_validate();
+        //MineFactoryReloadedCore.log().info("cofh validate started");
+		//super.cofh_validate();
 		_ignoreChanges = false;
 		onFactoryInventoryChanged();
-	}
 
+        //MineFactoryReloadedCore.log().info("cofh validate ended?");
+	}
+    public void markDirty(){
+        _ignoreChanges = false;
+        onFactoryInventoryChanged();
+    }
 	@Override
 	public void invalidate() {
 
@@ -71,14 +79,17 @@ public class TileEntityDeepStorageUnit extends TileEntityFactoryInventory implem
 	}
 
 	public int getQuantityAdjusted() {
+        //MineFactoryReloadedCore.log().info("" + getSizeInventory());
 
 		int quantity = _storedQuantity;
 
 		for (int i = 2; i < getSizeInventory(); i++) {
 			if (_inventory[i] != null && UtilInventory.stacksEqual(_storedItem, _inventory[i])) {
 				quantity += _inventory[i].stackSize;
+                //MineFactoryReloadedCore.log().info("" + _inventory[i].stackSize);
 			}
 		}
+        //MineFactoryReloadedCore.log().info("completed getquantityadjusted");
 
 		return quantity;
 	}
@@ -89,10 +100,13 @@ public class TileEntityDeepStorageUnit extends TileEntityFactoryInventory implem
 	}
 
 	public void clearSlots() {
+        //MineFactoryReloadedCore.log().debug("clearslots");
 
 		for (int i = 0; i < getSizeInventory(); i++) {
 			_inventory[i] = null;
 		}
+        //MineFactoryReloadedCore.log().debug("completed clearslots");
+
 	}
 
 	@Override
@@ -120,17 +134,25 @@ public class TileEntityDeepStorageUnit extends TileEntityFactoryInventory implem
 	@Override
 	protected void onFactoryInventoryChanged() {
 
+        //MineFactoryReloadedCore.log().info("started onFactoryInventoryChanged main");
 		super.onFactoryInventoryChanged();
-		if (_ignoreChanges | worldObj == null || worldObj.isRemote)
-			return;
+//        MineFactoryReloadedCore.log().info(" isActive " + isActive() + " _inventory[2] " + _inventory[2] + " storedItem " + _storedItem + " storedQuantity " + _storedQuantity);
 
-		if (!isActive() && (_inventory[2] == null) & _storedItem != null & _storedQuantity == 0) {
-			_storedItem = null;
+ //       MineFactoryReloadedCore.log().info("_ignoreChanges " + _ignoreChanges );
+        if (_ignoreChanges | worldObj == null || worldObj.isRemote){
+       //     MineFactoryReloadedCore.log().info("case 1");
+			return;
+        }
+        if (!isActive() && (_inventory[2] == null) & _storedItem != null & _storedQuantity == 0) {
+        //    MineFactoryReloadedCore.log().info("case 2");
+            _storedItem = null;
 		}
 		checkInput(0);
 		checkInput(1);
 
 		if ((_inventory[2] == null) & _storedItem != null & _storedQuantity > 0) {
+        //    MineFactoryReloadedCore.log().info("case 3");
+
 			_inventory[2] = _storedItem.copy();
 			_inventory[2].stackSize = Math.min(_storedQuantity,
 				Math.min(_storedItem.getMaxStackSize(), getInventoryStackLimit()));
@@ -138,15 +160,19 @@ public class TileEntityDeepStorageUnit extends TileEntityFactoryInventory implem
 		} else if (_inventory[2] != null & _storedQuantity > 0 &&
 				_inventory[2].stackSize < _inventory[2].getMaxStackSize() &&
 				UtilInventory.stacksEqual(_storedItem, _inventory[2])) {
+        //    MineFactoryReloadedCore.log().info("case 4");
 			int amount = Math.min(_inventory[2].getMaxStackSize() - _inventory[2].stackSize, _storedQuantity);
 			_inventory[2].stackSize += amount;
 			_storedQuantity -= amount;
 		}
+
+       // MineFactoryReloadedCore.log().info("ended onFactoryInventoryChanged main");
 	}
 
 	private void checkInput(int slot) {
-
+        //MineFactoryReloadedCore.log().info("started checkInput");
 		l: if (_inventory[slot] != null) {
+        //    MineFactoryReloadedCore.log().info("slot not empty");
 			if (_storedItem == null) {
 				_storedItem = _inventory[slot].copy();
 				_storedItem.stackSize = 1;
