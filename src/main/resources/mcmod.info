@@ -1,0 +1,627 @@
+{
+    "modListVersion": 2,
+    "modList": [{
+        "modid": "${modId}",
+        "name": "${modName}",
+        "description": "Automate everything!",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals",
+            "TehKrush",
+            "AtomicStryker",
+            "Feanorith",
+            "skyboy026"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "",
+        "requiredMods": [],
+        "dependencies": [],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatAppliedEnergistics",
+        "name": "MFR Compat: Applied Energistics",
+        "description": "Compatibility addon for Applied Energistics",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatAtum",
+        "name": "MFR Compat: Atum",
+        "description": "Compatibility addon for Atum",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatBackTools",
+        "name": "MFR Compat: BackTools",
+        "description": "Compatibility addon for BackTools",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatBuildCraft",
+        "name": "MFR Compat: BuildCraft",
+        "description": "Compatibility addon for BuildCraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatChococraft",
+        "name": "MFR Compat: Chococraft",
+        "description": "Compatibility addon for Chococraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatExtraBiomes",
+        "name": "MFR Compat: ExtraBiomes",
+        "description": "Compatibility addon for ExtraBiomes",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatForestry",
+        "name": "MFR Compat: Forestry",
+        "description": "Compatibility addon for Forestry",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatForestryPre",
+        "name": "MFR Compat: Forestry (part 2)",
+        "description": "Compatibility addon for Forestry (part 2)",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatForgeMicroblock",
+        "name": "MFR Compat: ForgeMicroblock",
+        "description": "Compatibility addon for ForgeMicroblock",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatIC2",
+        "name": "MFR Compat: IC2",
+        "description": "Compatibility addon for IC2",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatMagicalCrops",
+        "name": "MFR Compat: Magical Crops",
+        "description": "Compatibility addon for Magical Crops",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatMystcraft",
+        "name": "MFR Compat: Mystcraft",
+        "description": "Compatibility addon for Mystcraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatPams",
+        "name": "MFR Compat: Pam's Mods",
+        "description": "Compatibility addon for Pam's Mods",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatRailcraft",
+        "name": "MFR Compat: Railcraft",
+        "description": "Compatibility addon for Railcraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatRP2",
+        "name": "MFR Compat: RP2",
+        "description": "Compatibility addon for RedPower2",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatSufficientBiomes",
+        "name": "MFR Compat: Sufficient Biomes",
+        "description": "Compatibility addon for Sufficient Biomes",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatThaumcraft",
+        "name": "MFR Compat: Thaumcraft",
+        "description": "Compatibility addon for Thaumcraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatThermalExpansion",
+        "name": "MFR Compat: Thermal Expansion",
+        "description": "Compatibility addon for Thermal Expansion",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatTwilightForest",
+        "name": "MFR Compat: TwilightForest",
+        "description": "Compatibility addon for Twilight Forest",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatVanilla",
+        "name": "MFR Compat: Vanilla",
+        "description": "Compatibility addon for Vanilla MC",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatXyCraft",
+        "name": "MFR Compat: XyCraft",
+        "description": "Compatibility addon for XyCraft",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MFR Compat Extra Trees",
+        "name": "MFR Compat Extra Trees",
+        "description": "Compatibility addon for Extra Trees",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatProjRed",
+        "name": "MFR Compat ProjectRed",
+        "description": "Compatibility addon for ProjectRed",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MFR Compat Forestry Trees",
+        "name": "MFR Compat Forestry Trees",
+        "description": "Compatibility addon for Forestry Trees",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    },
+    {
+        "modid": "MineFactoryReloaded|CompatTConstruct",
+        "name": "MFR Compat: Tinkers' Construct",
+        "description": "Compatibility addon for Tinkers' Construct",
+        "version": "${modVersion}",
+        "mcversion": "${minecraftVersion}",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/minefactory-reloaded",
+        "updateUrl": "",
+        "authorList": [
+            "PowerCrystals"
+        ],
+        "credits": "All the contributors",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "MineFactoryReloaded",
+        "requiredMods": [
+            "MineFactoryReloaded"
+        ],
+        "dependencies": [
+            "MineFactoryReloaded"
+        ],
+        "dependants": [],
+        "useDependencyInformation": false
+    }]
+}
